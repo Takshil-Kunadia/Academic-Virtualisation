@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./../icons//user.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./../css/all.css" />
+    <link rel="stylesheet" href="./../css/query.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="./../js/all.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <section class="nav">
+        <div class="nav-profile">
+          <img
+            src="./../img/profile-icon.png"
+            alt="user-image"
+            class="user-image"
+          />
+          <p class="user-name">Akhed Jenish</p>
+        </div>
+        <hr class="dash" />
+        <menu class="menu">
+          <p class="menu-name">MENU</p>
+          <ul class="menu-items">
+            <li>
+              <a href="home.html"><i class="ph-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#" class="link1-im"
+                ><i class="ph-telegram-logo"></i>Instant Messenger</a
+              >
+              <a href="#" class="link2-im"
+                ><i class="ph-telegram-logo"></i>Instant<br />
+                Messenger</a
+              >
+            </li>
+            <li>
+              <a href="notes.html"><i class="ph-note-pencil"></i>Notes</a>
+            </li>
+            <li>
+              <a href="community.html"
+                ><i class="ph-users-three"></i>Community</a
+              >
+            </li>
+            <li>
+              <a href="myprofile.html" id="menu-active"
+                ><i class="ph-user"></i>My Profile</a
+              >
+            </li>
+            <li class="nav-logout">
+              <a href="#"><i class="ph-sign-out"></i>Log Out</a>
+            </li>
+          </ul>
+        </menu>
+        <a href="contact.html" class="contact-us-btn">Contact Us</a>
+      </section>
+      <section class="search">
+        <button class="nav-btn">
+          <i class="ph-list" name="open-nav"></i
+          ><i class="ph-x" name="close-nav"></i>
+        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-bar-input" />
+          <button class="search-icon-btn">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="log-out">LOG OUT</button>
+      </section>
+      <section class="main myprofile-main">
+        <h3 class="title">MY PROFILE</h3>
+        <div class="user-info">
+          <img
+            src="./../img/profile-icon.png"
+            alt="user-image"
+            class="user-image"
+          />
+          <p class="user-name">Akhed Jenish</p>
+          <div class="edit-div">
+            <button class="edit-info edit-info--details">Edit Details</button>
+            <button class="edit-info edit-info--pass">Update Password</button>
+          </div>
+        </div>
+        <div class="college-info">
+          <strong class="college-title">College:</strong>
+          <p class="college-name">
+            Sarvajanink College of Engineering & Technology
+          </p>
+          <strong class="course-title">Course:</strong>
+          <p class="course-name">Computer Engineering</p>
+          <strong class="email-title">Email:</strong>
+          <p class="email-id">190420107001.co19s1@scet.ac.in</p>
+          <strong class="year-title">Year:</strong>
+          <p class="year-define">Third</p>
+          <strong class="id-title">ID:</strong>
+          <p class="id-name">190420107001</p>
+          <strong class="sem-title">Semester:</strong>
+          <p class="sem-study">6</p>
+        </div>
+        <div class="sub-menu">
+          <a href="mynotes.html" class="submenu-link"
+            ><i class="ph-note"></i>My Notes</a
+          >
+          <a href="savednotes.html" class="submenu-link"
+            ><i class="ph-bookmark-simple"></i>Saved Notes</a
+          >
+        </div>
+        <div class="preferences">
+          <h2 class="preferences-heading">PREFERENCES</h2>
+          <div class="preferences-grid">
+            <strong class="interest-title">Interest In:</strong>
+            <p class="interest-info">
+              Python, Django, Drones, C language, Javascript, HTML, CSS, NodeJs,
+              React, Machine Learning
+            </p>
+            <strong class="extra-title">Extra Curricular Activities:</strong>
+            <p class="extra-info">
+              Dancing, Singing, Artist, Soft Skill Club, Class Representative,
+              Guitarist
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="modal hidden myprofile-modal">
+      <div class="form-header">
+        <h1>Edit Profile Details</h1>
+      </div>
+
+      <div class="edit-grid">
+        <!-- Main Form Started -->
+        <label for="firstName">First Name<sup>*</sup>:</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          name="firstname"
+          id="edit-name"
+          required
+        />
+
+        <label for="lastName">Last Name<sup>*</sup>:</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="lastname"
+          id="edit-name"
+          required
+        />
+
+        <label for="email">Your Email<sup>*</sup>:</label>
+        <input
+          type="email"
+          placeholder="abcd@xyz.com"
+          name="email"
+          id="edit-email"
+          required
+        />
+
+        <label for="Enrollment">Enrollment No<sup>*</sup>:</label>
+        <input
+          type="number"
+          placeholder="Ex: 190420107001"
+          id="edit-enrollment"
+          name="enrollment"
+          required
+        />
+
+        <label for="College">College<sup>*</sup>:</label>
+        <select name="college" id="college">
+          <option value="01">
+            Sarvajanik College of Engineering and Technology
+          </option>
+        </select>
+
+        <label for="Course">Course<sup>*</sup>:</label>
+        <select name="course" id="course">
+          <option value="#">Select Course</option>
+          <option value="AU">Automobile Engineering</option>
+          <option value="CH">Chemical Engineering</option>
+          <option value="CI">Civil Engineering</option>
+          <option value="CO">Computer Engineering</option>
+          <option value="EL">Electrical Engineering</option>
+          <option value="EC">Electronics & Communication Engineering</option>
+          <option value="IT">Information Technology</option>
+          <option value="ME">Mechanical Engineering</option>
+        </select>
+
+        <label for="semester">Semester<sup>*</sup>:</label>
+        <select name="sem" id="sem">
+          <option value="#">Select Sem</option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+        </select>
+
+        <label for="Year">Year<sup>*</sup>:</label>
+        <select name="year" id="year">
+          <option value="#">Select Year</option>
+          <option value="01">First</option>
+          <option value="02">Second</option>
+          <option value="03">Third</option>
+          <option value="04">Fourth</option>
+        </select>
+
+        <label for="interest">Interest In:</label>
+        <input
+          type="text"
+          name="interest"
+          id="edit-interest"
+          placeholder="Ex: (Data Science, Pyhton, Circuits)"
+        />
+
+        <label for="extra_curr">Extra Curricular Activities</label>
+        <input
+          type="text"
+          id="edit-extra_curr"
+          name="extra_curr"
+          placeholder="Ex: (Dancing, Singing, Piano)"
+        />
+
+        <!-- Submit Button -->
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+    <div class="overlay hidden edit-overlay"></div>
+
+    <div class="modal hidden myprofile-modal password-modal">
+      <div class="form-header">
+        <h1>Edit Password</h1>
+      </div>
+
+      <div class="edit-grid">
+        <!-- Main Form Started -->
+        <label for="currentpassword">Current Password<sup>*</sup>:</label>
+        <input
+          type="password"
+          placeholder="Current Password"
+          name="currentpassword"
+          id="edit-password"
+        />
+
+        <label for="password">Password<sup>*</sup>:</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          id="edit-password"
+        />
+
+        <label for="confirmPassword">Confirm Password<sup>*</sup>:</label>
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          name="confirmPassword"
+          id="edit-password"
+        />
+
+        <!-- Submit Button -->
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+    <div class="overlay hidden edit-overlay"></div>
+  </body>
+</html>

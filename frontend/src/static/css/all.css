@@ -1,0 +1,2075 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* ************ BODY, CONTAINER ************** */
+
+.body {
+  color: #212529;
+  background-color: #f8f9fa !important;
+  /* max-width: 100%; */
+  font-size: 1.6rem;
+  line-height: 1;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: max-content 1fr;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  height: 100vh;
+  position: relative;
+}
+/* *************** BODY, CONTAINER END ************** */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVIGATION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.nav {
+  padding: 2rem 0;
+  background-color: #fff;
+  max-width: 100%;
+  height: 100vh;
+  grid-row: 1 / -1;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* USER DETAILS */
+.user-image {
+  max-width: 9rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.user-name {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-profile {
+  text-align: center;
+}
+/* USER DETAILS END */
+
+.dash {
+  margin-top: 1rem;
+  width: 65%;
+  border: 0;
+  border-bottom: 0.1rem solid #212529;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-name {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu-items {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu-items li a:link,
+.menu-items li a:visited {
+  text-decoration: none;
+  color: #212529;
+}
+
+.menu-items li a:hover,
+.menu-items li a:active {
+  color: #339af0;
+  transition: all 0.1s;
+}
+
+.menu-items li a:active {
+  transform: scale(0.99);
+}
+
+.menu-items li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-items li a i {
+  font-size: 2.2rem;
+}
+
+#menu-active:link,
+#menu-active:visited {
+  color: #339af0;
+}
+
+.link2-im {
+  display: none !important;
+}
+
+.nav-logout {
+  display: none !important;
+}
+/* MENU END */
+
+/* CONTACT US */
+.contact-us-btn:link,
+.contact-us-btn:visited {
+  text-decoration: none;
+  padding: 1.4rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #d0ebff;
+  color: #226cfc;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  margin-top: auto;
+}
+
+.contact-us-btn:hover {
+  background-color: #2563eb;
+  color: #f8f9fa;
+  transition: all 0.2s;
+}
+
+.contact-us-btn:active {
+  transform: scale(0.98);
+}
+
+.contact-active:link,
+.contact-active:visited {
+  text-decoration: none;
+  padding: 1.4rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: #f8f9fa;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  margin-top: auto;
+}
+
+.contact-active:hover {
+  background-color: #1864ab;
+  color: #f8f9fa;
+  transition: all 0.2s;
+}
+
+.contact-active:active {
+  transform: scale(0.98);
+}
+/* CONTACT END */
+
+/*MOBILE NAVIGATION BUTTON */
+.nav-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.nav-btn i {
+  font-size: 4.5rem;
+  color: #333;
+}
+
+.nav-btn i[name="close-nav"] {
+  display: none;
+}
+/* MOB NAV END */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAVIGATION END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SEARCH @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-bar-input {
+  width: 90%;
+  padding: 1.15rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #a5d8ff;
+  outline-color: #74c0fc;
+}
+
+.ph-magnifying-glass {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.search-icon-btn {
+  margin-left: -7.5rem; /* CALCULATE THIS USING FONT SIZE OF ICON AND PADDING ON BOTH SIDE WHICH IS EQUAL TO 7 ON ADDING ALL*/
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+  background-color: #74c0fc;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.search-icon-btn:hover {
+  background-color: #007aec;
+  transition: all 0.3s;
+}
+
+.search-icon-btn:active {
+  transform: translateY(0.2rem);
+}
+
+.log-out {
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #adb5bd;
+  color: #f1f3f5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-right: 3rem;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.log-out:hover {
+  background-color: #4b5563;
+  transition: all 0.3s;
+}
+
+.log-out:active {
+  transform: scale(0.98);
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SEARCH END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MAIN @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.main {
+  background-color: #eff6ff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.18);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: calc(100% - 3rem);
+  height: calc(100vh - 9rem);
+}
+
+.main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #a5d8ff !important;
+  border-radius: 10px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MAIN END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.home-main {
+  background-color: #fff !important;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.home-heading {
+  font-weight: 700;
+  font-size: 9rem;
+  color: #868e96;
+  font-family: inherit;
+}
+
+.home-sub-heading {
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #adb5bd;
+  font-family: inherit;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ HOME END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* *@*@*@*@*@*@*@*@*@*@*@*@*@*@* MODAL AND OVERLAY *@*@*@*@*@*@*@*@*@*@*@*@*@*@* */
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.modal {
+  /* FOR MAKING MODAL SCROLL IN SMALLER DEVICES */
+  max-height: calc(100% - 4rem);
+  overflow-y: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  transition: all 0.3s ease-in;
+
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #adb5bd !important;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+/* *@*@*@*@*@*@*@*@*@*@*@*@*@*@* MODAL AND OVERLAY END *@*@*@*@*@*@*@*@*@*@*@*@*@*@* */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ NOTES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.note-main {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6rem;
+  row-gap: 6rem;
+}
+
+.note-main article {
+  display: flex;
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+/* NOTE IMAGE */
+.note-main .note-img-hover {
+  width: 16rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.note-main .note-img-hover img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.note-main .note-img-hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* NOTE IMAGE END */
+
+/* NOTE INFO */
+.note-main .note-info {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.note-main .note-info h3 {
+  color: #4f4f4f;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.note-main .note-info .author-name {
+  font-size: 1.4rem;
+}
+
+.save-css {
+  font-size: 1.4rem !important;
+  margin-top: 1rem !important;
+}
+/* NOTE INFO END */
+
+/* VIEW BUTTON */
+.view-btn {
+  padding: 0.7rem 0.8rem;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: 0;
+  width: 10rem;
+  color: black;
+  box-shadow: 0 0 2rem rgba(17, 15, 15, 0.151);
+  border-radius: 1rem;
+  background-image: linear-gradient(50deg, #fff 0%, #d1d5db 51%, #fff 100%);
+  cursor: pointer;
+
+  margin-top: auto;
+}
+
+.view-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: black;
+  text-decoration: none;
+}
+
+.view-btn:active {
+  transform: scale(0.9);
+}
+
+.view-btn:focus {
+  text-decoration: none;
+}
+/* VIEW BTN END */
+
+/* NOTES MODAL STYLE */
+.note-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CLOSE MODAL */
+.note-modal .close-modal {
+  align-self: flex-end;
+  font-size: 2.5rem;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* CLOSE MODAL END */
+
+/* USER DETAIL */
+.note-modal .user-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.note-modal .user-details .note-img-hover {
+  width: 15rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+.note-modal .user-details .note-img-hover img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.note-modal .user-details .note-img-hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.note-modal .user-details .note-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.note-modal .user-details .note-info h3 {
+  font-size: 2.3rem;
+  color: #212529;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.note-modal .user-details .note-info p {
+  font-size: 1.4rem;
+}
+/* USER DETAIL END */
+
+/* DESCRIPTION */
+.note-modal .description {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note-modal .description h3 {
+  font-weight: 600;
+}
+
+.note-modal .description p {
+  line-height: 2rem;
+}
+/* DESCRIPTION END */
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.save-download-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DELETE */
+.note-delete {
+  border: 0;
+  background-color: #ffe3e3;
+  color: #e03131;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.note-delete:hover {
+  background-color: #e03131;
+  color: #ffe3e3;
+  transition: all 0.3s;
+}
+
+.note-delete:active {
+  transform: scale(0.96);
+}
+/* DELETE END */
+
+/* SAVE */
+.note-save {
+  border: 0;
+  background-color: #c5f6fa;
+  color: #0c8599;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  margin-right: 1rem;
+}
+
+.note-save:hover {
+  background-color: #0c8599;
+  color: #c5f6fa;
+  transition: all 0.3s;
+}
+
+.note-save:active {
+  transform: scale(0.96);
+}
+
+.note-unsave {
+  border: 0;
+  background-color: #0c8599;
+  color: #c5f6fa;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  margin-right: 1rem;
+}
+
+.note-unsave:hover {
+  background-color: #0b7285;
+  color: #e3fafc;
+  transition: all 0.3s;
+}
+
+.note-unsave:active {
+  transform: scale(0.96);
+}
+/* SAVE END */
+
+/* DOWNLOAD */
+.note-download {
+  border: 0;
+  background-color: #d0ebff;
+  color: #1971c2;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.note-download:hover {
+  background-color: #1971c2;
+  color: #d0ebff;
+  transition: all 0.3s;
+}
+
+.note-download:active {
+  transform: scale(0.96);
+}
+/* DOWNLOAD END */
+/* BUTTONS END */
+/* NOTES MODAL END */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ NOTES END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ MYPROFILE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.myprofile-main {
+  background-color: inherit;
+  border-radius: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.myprofile-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.myprofile-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.myprofile-main::-webkit-scrollbar-thumb {
+  background: #ced4da !important;
+  border-radius: 10px;
+}
+
+/* TITLE */
+.myprofile-main .title {
+  color: #868e96;
+  margin-bottom: -1rem;
+}
+/* TITLE END */
+
+/* MYPROFILE USER */
+.myprofile-main .user-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.myprofile-main .user-info .user-name {
+  margin: 0;
+}
+/* USER END */
+
+/* EDIT INFO */
+.myprofile-main .edit-div {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-info--details {
+  justify-content: flex-end;
+}
+
+.myprofile-main .edit-info {
+  padding: 1rem 2rem;
+  font-family: inherit;
+  background-color: #c5f6fa;
+  color: #495057;
+  border: 0;
+  font-size: 1.6rem;
+  align-self: flex-end;
+  border-radius: 2rem;
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.075);
+}
+
+.myprofile-main .edit-info:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  background-color: #3bc9db;
+  color: #212529;
+  transition: all 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myprofile-main .edit-info:active {
+  transform: scale(0.98);
+}
+
+.myprofile-main .edit-info:focus {
+  text-decoration: none;
+}
+/* EDIT END */
+
+/* COLLEGE INFO */
+.myprofile-main .college-info {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  line-height: 2rem;
+}
+
+/* SUB MENU */
+.myprofile-main .sub-menu {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: fit-content;
+  background-color: #f8f9fa;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.myprofile-main .sub-menu a {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+}
+
+.myprofile-main .sub-menu a i {
+  font-size: 5rem;
+}
+
+.num-followers,
+.num-following {
+  font-size: 3rem;
+}
+
+.myprofile-main .submenu-link:link,
+.myprofile-main .submenu-link:visited {
+  text-decoration: none;
+  color: #495057;
+}
+
+.myprofile-main .submenu-link:hover {
+  background-color: #dee2e6;
+  transition: all 0.3s;
+}
+
+.myprofile-main .submenu-link:active {
+  transform: scale(0.98);
+}
+
+.sp-flex {
+  height: 100%;
+  padding-bottom: 0 !important;
+}
+
+.num-followers,
+.num-following {
+  font-size: 3.5rem !important;
+}
+/* SUB MENU END */
+
+/* PREFERENCES */
+.myprofile-main .preferences h2 {
+  font-size: 2.2rem;
+  color: #212529;
+  margin-bottom: 2rem;
+}
+
+.myprofile-main .preferences-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+
+  line-height: 2.2rem;
+}
+
+.myprofile-main .preferences-grid strong {
+  font-size: 1.7rem;
+}
+
+.myprofile-main .interest-info {
+  margin-bottom: 1rem;
+}
+/* PREFERENCES END */
+
+/* EDIT INFO */
+.myprofile-modal {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  width: 75%;
+}
+
+.myprofile-modal .edit-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content 1fr;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.myprofile-modal sup {
+  color: #c92a2a;
+}
+
+.myprofile-modal .form-header {
+  background: rgb(0, 132, 255);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.myprofile-modal .form-header h1,
+.myprofile-modal .form-header p {
+  text-align: center;
+  color: white;
+}
+
+.myprofile-modal p {
+  font-size: 1.6rem;
+}
+
+.myprofile-modal input {
+  padding: 1rem;
+  outline: none;
+  border-radius: 10px;
+  border: 0.1rem solid #ccc;
+}
+
+.myprofile-modal input:focus {
+  border: 0.1rem solid rgb(0, 132, 255);
+}
+
+.password-modal {
+  max-width: max-content;
+}
+
+.password-modal .edit-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.password-modal .edit-grid input {
+  margin-bottom: 1rem;
+}
+
+.password-modal .edit-grid .submit {
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+#sem,
+#course,
+#year,
+#college {
+  word-wrap: break-word;
+  width: 70%;
+  padding: 1rem;
+  border: 0.1rem solid #ced4da;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#college {
+  width: 100%;
+}
+
+#course {
+  width: 80%;
+}
+
+.myprofile-modal button {
+  grid-column: 1/-1;
+  width: fit-content;
+  justify-self: end;
+
+  background: rgb(0, 132, 255);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.4rem;
+}
+
+.myprofile-modal button:hover {
+  background: rgb(0, 105, 204);
+  transition: all 0.3s;
+}
+
+.myprofile-modal button:active {
+  transform: scale(0.96);
+}
+/* EDIT END */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ MYPROFILE END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ MYNOTES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.mynotes-main {
+  margin-top: 1rem;
+  height: calc(100vh - 12rem);
+  background-color: #f3f0ff;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.mynotes-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mynotes-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mynotes-main::-webkit-scrollbar-thumb {
+  background: #d0bfff !important;
+  border-radius: 10px;
+}
+
+/* MYNOTES TITLE */
+.container div .title {
+  color: #868e96;
+}
+
+.container div .title a:link,
+.container div .title a:visited {
+  text-decoration: none;
+  color: #868e96;
+}
+
+.container div .title a:hover {
+  color: #212529;
+}
+/* TITLE END */
+
+/* UPLOAD BUTTONS */
+.mynotes-main .upload-sec {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.my-uploads h2,
+.upload h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+/* UPLOAD ACTIVE BUTTON */
+.mynotes-main .upload-active {
+  background-color: #6741d9 !important;
+  color: #f3f0ff !important;
+  padding: 1rem;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mynotes-main .upload-active:hover {
+  background-color: #6741d9;
+  color: #f3f0ff;
+  transition: all 0.3s;
+}
+
+.mynotes-main .upload-active:active {
+  transform: scale(0.98);
+}
+
+.mynotes-main .upload-active h2:active {
+  padding-bottom: -1rem;
+}
+/* UPLOAD ACTIVE BUTTON END */
+
+/* UPLOAD HOVER BUTTON */
+.mynotes-main .upload-hover {
+  border: 0;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #6741d9;
+  background-color: #f3f0ff;
+}
+
+.mynotes-main .upload-hover:hover {
+  background-color: #9775fa;
+  color: #f3f0ff;
+  transition: all 0.3s;
+}
+
+.mynotes-main .upload-hover:active {
+  background-color: #6741d9;
+  color: #f3f0ff;
+  transform: scale(0.98);
+}
+/* UPLOAD HOVER BUTTON END */
+/* UPLOAD BUTTONS END */
+
+/* ----------------------- MYNOTE NOTE VIEW --------------------------*/
+.uploaded-notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6rem;
+  row-gap: 6rem;
+}
+
+.uploaded-notes article {
+  display: flex;
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+/* NOTE IMAGE */
+.uploaded-notes .note-img-hover {
+  width: 16rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.uploaded-notes .note-img-hover img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.uploaded-notes .note-img-hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* NOTE IMAGE END */
+
+/* NOTE INFO */
+.uploaded-notes .note-info {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.uploaded-notes .note-info h3 {
+  color: #4f4f4f;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.uploaded-notes .note-info .author-name {
+  font-size: 1.4rem;
+}
+/* NOTE INFO END */
+/*----------------------------- MYNOTE NOTE VIEW -----------------------*/
+
+/*---------------------------- FILE UPLOAD -----------------------------*/
+.upload-note {
+  margin: auto;
+  font-family: inherit;
+  display: flex;
+  gap: 2rem;
+}
+
+/* ===== NOTE UPLOAD ===== */
+.file-upload-sec {
+  width: 35rem;
+  height: 45rem;
+  position: relative;
+}
+
+.file-upload {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.file-upload-sec div {
+  background: linear-gradient(45deg, #ef8172, #ff4668);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.file-upload-sec div label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2rem;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.file-upload-sec div label i {
+  font-size: 2rem;
+}
+
+/* ----------------------- FOR LATER ------------------------ */
+/* .uploaded_image_LD {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  display: none;
+}
+
+.uploaded_image_LD:hover {
+  background-color: #0005;
+}
+
+.uploaded_image_LD img {
+  position: relative;
+  height: 100%;
+  transform: translateX(-50%);
+  left: 50%;
+  min-width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.uploaded_image_LD i {
+  position: absolute;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.uploaded_image_LD i:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #fc8778, #ff1540);
+  transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+} */
+/* ------------------------ FOR LATER END ------------------- */
+/* ===== NOTE UPLOAD END ===== */
+
+/* ===== NOTE DETAILS =====*/
+.details-input {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  margin: 1rem 0;
+}
+
+/* NOTE TITLE */
+.details-input .note-title {
+  width: 100%;
+  padding: 0.8rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #e5e7eb;
+  box-shadow: 0 0 1.5rem rgba(33, 37, 41, 0.1);
+}
+
+.details-input .note-title:focus {
+  outline-color: #faa2c1;
+  box-shadow: inset 0 0 1rem #fff;
+}
+/* NOTE TITLE END */
+
+/* DESC BOX */
+.upload-note .desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.desc-box .desc-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.desc-box .desc-area {
+  width: fit-content;
+  line-height: 1;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #e5e7eb;
+  box-shadow: 0 0 1.5rem rgba(33, 37, 41, 0.1);
+}
+
+.desc-box .desc-area:focus {
+  outline-color: #faa2c1;
+  box-shadow: inset 0 0 1rem #fff;
+}
+
+.desc-box textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.desc-box textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.desc-box textarea::-webkit-scrollbar-thumb {
+  background: #ffdeeb !important;
+  border-radius: 10px;
+}
+/* DESC BOX END */
+
+/* SUBMIT BUTTON */
+.file-upload-btn {
+  font-size: 1.6rem;
+  color: #ff4668;
+  border: 1px solid #ff4668;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-end;
+
+  background-color: #f1f3f5;
+  margin-top: auto;
+}
+
+.file-upload-btn:hover {
+  color: #fff;
+  background-color: #ff4668;
+  transition: all 0.3s;
+}
+
+.file-upload-btn:active {
+  transform: scale(0.99);
+}
+/* SUBMIT BUTTOON END */
+/* ===== NOTE DETAILS END =====*/
+/*----------------------------- FILE UPLOAD END -----------------------*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ MYNOTES END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ SAVED NOTES END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.savednotes-main {
+  margin-top: 1rem;
+  height: calc(100vh - 12rem);
+  background-color: #e3fafc;
+  padding: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 6rem;
+  row-gap: 6rem;
+}
+
+.savednotes-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.savednotes-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.savednotes-main::-webkit-scrollbar-thumb {
+  background: #99e9f2 !important;
+  border-radius: 10px;
+}
+
+.savednotes-main article {
+  display: flex;
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+/* NOTE IMAGE */
+.savednotes-main .note-img-hover {
+  width: 16rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.savednotes-main .note-img-hover img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.savednotes-main .note-img-hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* NOTE IMAGE END */
+
+/* NOTE INFO */
+.savednotes-main .note-info {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.savednotes-main .note-info h3 {
+  color: #4f4f4f;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.savednotes-main .note-info .author-name {
+  font-size: 1.4rem;
+}
+/* NOTE INFO END */
+
+/* NOTES MODAL STYLE */
+.savednotes-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.savednotes-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CLOSE MODAL */
+.savednotes-modal .close-modal {
+  align-self: flex-end;
+  font-size: 2.5rem;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* CLOSE MODAL END */
+
+/* USER DETAIL */
+.savednotes-modal .user-details {
+  display: flex;
+  gap: 2rem;
+}
+
+.savednotes-modal .user-details .note-img-hover {
+  width: 15rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+.savednotes-modal .user-details .note-img-hover img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s;
+}
+
+.savednotes-modal .user-details .note-img-hover img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.savednotes-modal .user-details .note-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.savednotes-modal .user-details .note-info h3 {
+  font-size: 2.3rem;
+  color: #212529;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.savednotes-modal .user-details .note-info p {
+  font-size: 1.4rem;
+}
+/* USER DETAIL END */
+
+/* DESCRIPTION */
+.savednotes-modal .description {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.savednotes-modal .description h3 {
+  font-weight: 600;
+}
+
+.savednotes-modal .description p {
+  line-height: 2rem;
+}
+/* DESCRIPTION END */
+/* NOTES MODAL END */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ SAVED NOTES END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ COMMUNITY @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.community-main {
+  background-color: #dee2e6;
+  padding: 3rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.community-main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.community-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.community-main::-webkit-scrollbar-thumb {
+  background: #adb5bd !important;
+  border-radius: 10px;
+}
+
+/* FILTER */
+.filter-tags {
+  display: flex;
+  gap: 2rem;
+}
+
+.filter-tags #sem,
+.filter-tags #course {
+  width: fit-content;
+  padding: 0.7rem 1rem !important;
+  font-size: 1.4rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.apply-filter {
+  border: 0;
+  border-radius: 10px;
+  margin-left: 5rem;
+  padding: 1rem;
+  background-color: #228be6;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.apply-filter:hover {
+  background-color: #1864ab;
+  transition: all 0.3s;
+}
+
+.apply-filter:active {
+  transform: scale(0.97);
+}
+/* FILTER END */
+
+/* COMMUNITY RESULT */
+.community-result {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+.community-result article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #4dabf7;
+}
+
+.community-result button {
+  border: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.community-result button:hover {
+  transition: all 0.3s;
+  transform: scale(1.04);
+}
+
+.community-result button:active {
+  opacity: 0.85;
+}
+
+.community-result .community-child {
+  width: 100%;
+}
+
+/* MYPROFILE USER */
+.community-result .user-image {
+  max-width: 7rem;
+}
+
+.community-result .user-name {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.community-result .user-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.community-result .user-info .user-name {
+  margin: 0;
+}
+/* USER END */
+
+/* COLLEGE INFO */
+.community-result .college-info {
+  display: grid;
+  grid-template-columns: min-content minmax(0, 1fr) min-content minmax(0, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  column-gap: 2rem;
+  row-gap: 1rem;
+  text-align: left;
+
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+/* INFO END */
+
+/* COMMUNITY FOLLOWER */
+.community-followers {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.4rem;
+}
+
+.community-followers div span {
+  margin-right: 0.3rem;
+}
+
+.follow-unfollow-forms {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.community-followers i {
+  font-size: 2rem;
+}
+/* COMMUNITY FOLLOWER END */
+/* RESULT END */
+
+/* COMMUNITY MODAL */
+.community-modal {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.community-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CLOSE MODAL */
+.community-modal .close-modal {
+  align-self: flex-end;
+  font-size: 2.5rem;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 #fff;
+}
+/* CLOSE MODAL END */
+
+/* MYPROFILE USER */
+.community-modal .user-image {
+  max-width: 9rem;
+}
+
+.community-modal .user-name {
+  font-size: 1.8rem;
+}
+
+.community-modal .user-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.community-modal .user-info .user-name {
+  margin: 0;
+}
+
+.community-modal .user-info .follower-span {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.community-modal .user-info .follow-btn {
+  margin-left: auto;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  background-color: #e64980;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.community-modal .user-info .follow-btn:hover {
+  background-color: #a61e4d;
+  transition: all 0.3s;
+}
+
+.community-modal .user-info .unfollow-btn {
+  margin-left: auto;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  background-color: #e64980;
+  color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.community-modal .user-info .unfollow-btn:hover {
+  background-color: #a61e4d;
+  transition: all 0.3s;
+}
+
+.community-modal .user-info .follow-btn i {
+  font-size: 1.5rem;
+}
+/* USER END */
+
+/* COLLEGE INFO */
+.community-modal .college-info {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content minmax(0, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  text-align: left;
+
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+/* INFO END */
+
+/* COMMUNITY LINK */
+.community-modal .links {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.community-modal .links a:link,
+.community-modal .links a:visited {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: #339af0;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.community-modal .links a:hover {
+  background-color: #a5d8ff;
+}
+
+.community-modal .links i {
+  font-size: 4rem;
+}
+
+.community-modal .links span {
+  text-align: center;
+}
+/* COMMUNTY LINK END */
+/* COMMUNITY MODAL END */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ COMMUNITY END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.contact-main {
+  background-color: #f8f9fa;
+  box-shadow: 0 0 rgba(0, 0, 0);
+  position: relative;
+}
+
+.contact-main .contactinfo {
+  position: absolute;
+  width: 35rem;
+  top: 10rem;
+  left: 3rem;
+  height: calc(100% - 20rem);
+  background: #ef3959;
+  z-index: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.contact-main .contactinfo h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-main .contactinfo .info {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-main .contactinfo .info li {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.contact-main .contactinfo .info li i {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.contact-main .contactinfo .info li span:nth-child(2) {
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.contact-main .contactinfo .info li:hover i,
+.contact-main .contactinfo .info li:hover span:nth-child(2) {
+  opacity: 1;
+}
+
+.contact-main .contactForm {
+  padding: 7rem 0;
+  background: #fff;
+  margin: 2rem 0 0 15rem;
+  padding: 10rem 5rem 0 27rem;
+  width: calc(100% - 20rem);
+  height: calc(100% - 4rem);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.contact-main .contactForm h2 {
+  color: #0f3959;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.contact-main .contactForm .formBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.contact-main .contactForm .formBox .inputBox {
+  position: relative;
+  margin: 0 0 3.5rem 0;
+}
+
+.contact-main .contactForm .formBox .inputBox.w50 {
+  width: 47%;
+}
+
+.contact-main .contactForm .formBox .inputBox.w100 {
+  width: 100%;
+}
+
+.contact-main .contactForm .formBox .inputBox input,
+.contact-main .contactForm .formBox .inputBox textarea {
+  width: 100% !important;
+  padding: 0.5rem 0;
+  resize: none;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #777;
+  outline: none;
+}
+
+.contact-main .contactForm .formBox .inputBox textarea {
+  min-height: 12rem;
+}
+
+.contact-main .contactForm .formBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #333;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.contact-main .contactForm .formBox .inputBox input:focus ~ span,
+.contact-main .contactForm .formBox .inputBox textarea:focus ~ span,
+.contact-main .contactForm .formBox .inputBox input:valid ~ span,
+.contact-main .contactForm .formBox .inputBox textarea:valid ~ span {
+  transform: translateY(-2rem);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #ff568c;
+}
+
+.contact-main .contactForm .formBox .inputBox input[type="submit"] {
+  cursor: pointer;
+  background: #ef3959;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  max-width: 15rem;
+  padding: 1.2rem;
+}
+
+.contact-main .contactForm .formBox .inputBox input[type="submit"]:hover {
+  background: #a61e4d;
+  transition: all 0.3s;
+}
+
+.contact-main .contactForm .formBox .inputBox input[type="submit"]:active {
+  transform: scale(0.98);
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ ALERT BOX AND ERROR BOX @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 1.6rem 15rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+.alert--success {
+  background-color: #20bf6b;
+}
+.alert--error {
+  background-color: #eb4d4b;
+}
+
+.heading-secondary--error {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ff7730),
+    to(#eb4d4b)
+  );
+  background-image: linear-gradient(to right, #ff7730, #eb4d4b);
+  font-size: 3.5rem;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100vh;
+  text-align: center;
+}
+
+.error__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.error__emoji {
+  font-size: 3.75rem;
+  margin-left: 1rem;
+}
+.error__msg {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ ALERT END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ FOLLOWER AND FOLLOWING @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.follow-main {
+  background-color: #eff6ff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.18);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: calc(100% - 3rem);
+
+  margin-top: 1rem;
+  height: calc(100vh - 12rem);
+  padding: 3rem;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@ FOLLOWER AND FOLLOWING END @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#up-removeImage {
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+  z-index: 100000;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2rem;
+}

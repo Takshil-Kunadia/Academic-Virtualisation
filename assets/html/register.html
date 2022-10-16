@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="././../css/login.css" />
+    <link
+      rel="shortcut icon"
+      href="./../icons/sign-in (3).svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./../css/query.css" />
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="./../css/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div class="wrapper" style="background-color: #1e2e3b">
+      <div class="inner">
+        <div class="image-holder">
+          <!-- <img class="login-img" src="static/./../login.png" alt="Login Image" style="visibility: hidden;"> -->
+        </div>
+        <form action="#" method="POST" class="special-class">
+          <h2 class="sign-up-heading">SIGN UP</h2>
+          <div class="form-flex">
+            <div class="flex-two">
+              <div class="form-wrapper">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sg_firstname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-wrapper">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sg_lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-wrapper">
+              <input
+                type="email"
+                class="form-control"
+                id="sg_email"
+                placeholder="Email"
+              />
+              <i class="zmdi zmdi zmdi-email"></i>
+            </div>
+            <div class="form-wrapper">
+              <input
+                type="password"
+                class="form-control"
+                id="sg_password"
+                placeholder="Password"
+              />
+              <i class="zmdi zmdi zmdi-lock"></i>
+            </div>
+            <div class="form-wrapper">
+              <input
+                type="password"
+                class="form-control"
+                id="sg_conf_password"
+                placeholder="Confirm Password"
+              />
+              <i class="zmdi zmdi zmdi-lock"></i>
+            </div>
+            <div class="flex-two">
+              <input
+                type="text"
+                class="form-control"
+                id="sg_enrid"
+                placeholder="Enrollment ID"
+              />
+              <select name="course" class="form-control select-pad">
+                <option value="#">Select Course</option>
+                <option value="AU">Automobile Engineering</option>
+                <option value="CH">Chemical Engineering</option>
+                <option value="CI">Civil Engineering</option>
+                <option value="CO">Computer Engineering</option>
+                <option value="EL">Electrical Engineering</option>
+                <option value="EC">
+                  Electronics & Communication Engineering
+                </option>
+                <option value="IT">Information Technology</option>
+                <option value="ME">Mechanical Engineering</option>
+              </select>
+            </div>
+            <div class="flex-two">
+              <select name="sem" class="form-control select-pad">
+                <option value="#">Select Sem</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+              </select>
+              <select name="year" class="form-control select-pad">
+                <option value="#">Select Year</option>
+                <option value="01">First</option>
+                <option value="02">Second</option>
+                <option value="03">Third</option>
+                <option value="04">Fourth</option>
+              </select>
+            </div>
+
+            <div class="flex-side">
+              <div class="form-check form-check-inline input-radio flex-radio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="role"
+                  id="student"
+                  value="student"
+                  checked
+                />
+                <label class="form-check-label" for="student">Student</label>
+              </div>
+              <div class="form-check form-check-inline input-radio1 flex-radio">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="role"
+                  id="teacher"
+                  value="teacher"
+                />
+                <label class="form-check-label" for="teacher">Teacher</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group container-login100-form-btn">
+            <button id="btn-signup" type="button">
+              Sign Up
+              <i class="zmdi zmdi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="w-full text-center">
+            <a href="login.html" class="text-dark"
+              >Already have an account? Sign in</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

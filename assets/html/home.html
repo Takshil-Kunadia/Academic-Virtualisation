@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./../icons/house.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./../css/all.css" />
+    <link rel="stylesheet" href="./../css/query.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="./../js/all.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <section class="nav">
+        <div class="nav-profile">
+          <img
+            src="./../img/profile-icon.png"
+            alt="user-image"
+            class="user-image"
+          />
+          <p class="user-name">Akhed Jenish</p>
+        </div>
+        <hr class="dash" />
+        <menu class="menu">
+          <p class="menu-name">MENU</p>
+          <ul class="menu-items">
+            <li>
+              <a href="home.html" id="menu-active"
+                ><i class="ph-house"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="link1-im"
+                ><i class="ph-telegram-logo"></i>Instant Messenger</a
+              >
+              <a href="#" class="link2-im"
+                ><i class="ph-telegram-logo"></i>Instant<br />
+                Messenger</a
+              >
+            </li>
+            <li>
+              <a href="notes.html"><i class="ph-note-pencil"></i>Notes</a>
+            </li>
+            <li>
+              <a href="community.html"
+                ><i class="ph-users-three"></i>Community</a
+              >
+            </li>
+            <li>
+              <a href="myprofile.html"><i class="ph-user"></i>My Profile</a>
+            </li>
+            <li class="nav-logout">
+              <a href="#"><i class="ph-sign-out"></i>Log Out</a>
+            </li>
+          </ul>
+        </menu>
+        <a href="contact.html" class="contact-us-btn">Contact Us</a>
+      </section>
+      <section class="search">
+        <button class="nav-btn">
+          <i class="ph-list" name="open-nav"></i
+          ><i class="ph-x" name="close-nav"></i>
+        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-bar-input" />
+          <button class="search-icon-btn">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="log-out">LOG OUT</button>
+      </section>
+      <section class="main home-main">
+        <h1 class="home-heading">WELCOME BACK,</h1>
+        <h2 class="home-sub-heading">Hope You have An Inspiring Day!!🤗</h2>
+      </section>
+    </div>
+  </body>
+</html>

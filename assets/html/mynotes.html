@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./../icons/note.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./../css/all.css" />
+    <link rel="stylesheet" href="./../css/query.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="./../js/all.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <section class="nav">
+        <div class="nav-profile">
+          <img
+            src="./../img/profile-icon.png"
+            alt="user-image"
+            class="user-image"
+          />
+          <p class="user-name">Akhed Jenish</p>
+        </div>
+        <hr class="dash" />
+        <menu class="menu">
+          <p class="menu-name">MENU</p>
+          <ul class="menu-items">
+            <li>
+              <a href="home.html"><i class="ph-house"></i>Home</a>
+            </li>
+            <li>
+              <a href="#" class="link1-im"
+                ><i class="ph-telegram-logo"></i>Instant Messenger</a
+              >
+              <a href="#" class="link2-im"
+                ><i class="ph-telegram-logo"></i>Instant<br />
+                Messenger</a
+              >
+            </li>
+            <li>
+              <a href="notes.html"><i class="ph-note-pencil"></i>Notes</a>
+            </li>
+            <li>
+              <a href="community.html"
+                ><i class="ph-users-three"></i>Community</a
+              >
+            </li>
+            <li>
+              <a href="myprofile.html" id="menu-active"
+                ><i class="ph-user"></i>My Profile</a
+              >
+            </li>
+            <li class="nav-logout">
+              <a href="#"><i class="ph-sign-out"></i>Log Out</a>
+            </li>
+          </ul>
+        </menu>
+        <a href="contact.html" class="contact-us-btn">Contact Us</a>
+      </section>
+      <section class="search">
+        <button class="nav-btn">
+          <i class="ph-list" name="open-nav"></i
+          ><i class="ph-x" name="close-nav"></i>
+        </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-bar-input" />
+          <button class="search-icon-btn">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="log-out">LOG OUT</button>
+      </section>
+      <div class="mynote-container">
+        <h3 class="title">
+          <a href="myprofile.html">MY PROFILE</a> > MY NOTES
+        </h3>
+        <section class="main mynotes-main">
+          <div class="upload-sec">
+            <button class="my-uploads upload-active">
+              <h2>My Uploads</h2>
+            </button>
+            <button class="upload upload-hover"><h2>Upload</h2></button>
+          </div>
+
+          <div class="uploaded-notes">
+            <article>
+              <figure class="note-img-hover">
+                <img src="./../img/note2.png" alt="Note Image" />
+              </figure>
+              <div class="note-info">
+                <h3 class="note-name">Computer Engineering</h3>
+                <p class="author-name">Author: Akhed Jenish</p>
+                <button class="view-btn">VIEW</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="upload-note hide">
+            <div class="file-upload-sec">
+              <div class="div-for-label">
+                <label for="file-upload" class="custom-file-upload"
+                  ><i class="ph-upload-simple"></i>Upload Note File</label
+                >
+              </div>
+              <input
+                type="file"
+                id="file-upload"
+                class="file-upload"
+                accept=".pdf"
+              />
+            </div>
+            <div class="details-input">
+              <input
+                class="note-title pad"
+                type="text"
+                id="up-title"
+                placeholder="Enter Note Title"
+              />
+              <div class="desc-box">
+                <p class="desc-title">
+                  Write Description about Note (Max. 150 words)
+                </p>
+                <textarea
+                  name="desc"
+                  id="up-desc"
+                  cols="65"
+                  rows="15"
+                  class="desc-area"
+                ></textarea>
+              </div>
+              <button type="button" class="file-upload-btn">Submit</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal hidden note-modal">
+      <button class="close-modal"><i class="ph-x"></i></button>
+      <div class="modal-body">
+        <div class="user-details">
+          <figure class="note-img-hover">
+            <img src="./../img/note2.png" alt="Note Image" />
+          </figure>
+          <div class="note-info">
+            <h3 class="note-name">Computer Engineering</h3>
+            <p class="author-name"><strong>Author:</strong> Akhed Jenish</p>
+            <p class="posted-on"><strong>Posted On:</strong> 2022-09-02</p>
+            <p><strong>Saves:</strong> <span class="save-count">0</span></p>
+          </div>
+        </div>
+        <div class="description">
+          <h3>DESCRIPTION:</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+            deserunt eveniet cumque obcaecati assumenda mollitia labore
+            recusandae explicabo? Quia esse tempore architecto labore reiciendis
+            enim repellendus delectus pariatur error laudantium. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Magnam, repellat nemo.
+            Esse, sint. Quisquam, labore rerum. Officia, nulla, illo quibusdam
+            magni labore, similique eos quos magnam accusantium dolores ea
+            ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tempora nihil libero ex accusamus fugit aliquam neque iusto
+            cupiditate repellendus molestias odit porro architecto, ipsum rerum
+            delectus amet dolores quas! Ab. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Aperiam labore excepturi maiores
+            eligendi enim mollitia quae et similique. Dicta tenetur ducimus nam
+            enim quo praesentium tempora dolorem blanditiis maiores incidunt.
+          </p>
+        </div>
+        <div class="buttons">
+          <div>
+            <button class="note-delete">Delete</button>
+          </div>
+          <div>
+            <button class="note-download">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
